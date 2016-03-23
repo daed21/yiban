@@ -1,5 +1,4 @@
-﻿
-var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
+﻿var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
 $(function () {
@@ -17,15 +16,15 @@ $(function () {
 	
 	$("#content").css("width", $loveHeart.width() + $("#code").width());
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
-	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
-	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
+	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 0));
+	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 0));
     // renderLoop
     setInterval(function () {
         garden.render();
     }, Garden.options.growSpeed);
 });
 
-$(window).resize(function() {
+$(window).resize(function(){
     var newWidth = $(window).width();
     var newHeight = $(window).height();
     if (newWidth != clientWidth && newHeight != clientHeight) {
@@ -121,12 +120,12 @@ function showMessages() {
 
 function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
-	$('#words').css("top", $("#garden").position().top + 195);
-	$('#words').css("left", $("#garden").position().left + 70);
+	$('#words').css("top", $("#garden").position().top + 30);
+	$('#words').css("left", $("#garden").position().left + 2);
 }
 
 function adjustCodePosition() {
-	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
+	$('#code').css("margin-top",200);
 }
 
 function showLoveU() {
