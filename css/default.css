@@ -2,10 +2,10 @@
 #mainDiv{width:100%;margin:0 auto;min-width:300px;display:block;position:relative;max-width:300px;overflow:hidden;}
 #loveHeart{width:670px;height:625px;position:absolute;}
 #garden{width:300px;height:300px}
-#elapseClock{text-align:right;font-size:13px;margin-top:10px;margin-bottom:10px}
+#elapseClock{text-align:left;font-size:18px;margin-top:10px;margin-bottom:10px}
 #words{font-family:"sans-serif";width:300px;font-size:13px;color:#666}
 #messages{display:none}
-#elapseClock .digit{font-family:"digit";font-size:14px}
+#elapseClock .digit{font-family:"digit";font-size:16px}
 #loveu{padding:5px;font-size:13px;margin-top:80px;margin-right:80px;text-align:right;display:none}
 #loveu .signature{margin-top:10px;font-size:13px;font-style:italic}
 #clickSound{display:none}
